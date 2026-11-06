@@ -40,7 +40,7 @@ const PUZZLES = {
 const REWARDS = {
 };
 
-const TONES = ['#4C2280', '#461E76', '#53268A'];
+const TONES = ['#3D1848', '#381543', '#431B4F'];
 const YEAR = 2026;
 
 // -------------------------------------------------------------
@@ -171,7 +171,7 @@ function openGame(n) {
 
 // won = false betyr at spillet ble tapt (f.eks. Wordle uten riktig ord)
 function showReward(n, won = true) {
-  const r = won ? (REWARDS[n] || { title: 'Du klarte det \u2605', text: '' }) : { title: 'Det gikk ikke denne gang. Bedre lykke til i morgen \u2665\uFE0E', text: '' };
+  const r = won ? (REWARDS[n] || { title: 'Du klarte det \u2605', text: '' }) : { title: 'Det gikk ikke denne gang. Bedre lykke til i morgen \u2605', text: '' };
   if (!r) return;
   if ($('game-area').querySelector('.reward')) return; // allerede vist
   const card = document.createElement('div');
