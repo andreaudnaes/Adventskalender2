@@ -26,10 +26,17 @@ const LAYOUT = [
 
 // Innholdet i hver luke. Svarene er kodet (base64) så de ikke står i klartekst.
 const PUZZLES = {
+  1: { type: 'ordgjetting', answer: 'S0FLQU8=' },
+  2: {
+    type: 'zip',
+    size: 8,
+    numbers: [[2, 1, 1], [4, 7, 2], [0, 1, 3], [1, 6, 4], [4, 1, 5], [5, 2, 6], [6, 1, 7], [5, 6, 8], [4, 3, 9], [5, 4, 10], [4, 5, 11], [5, 5, 12]],
+    solution: 'WzE3LCAxNiwgMjQsIDMyLCA0MCwgNDgsIDU2LCA1NywgNTgsIDU5LCA2MCwgNjEsIDYyLCA2MywgNTUsIDQ3LCAzOSwgMzEsIDIzLCAxNSwgNywgNiwgNSwgNCwgMywgMiwgMSwgMCwgOCwgOSwgMTAsIDExLCAxMiwgMTMsIDE0LCAyMiwgMjEsIDIwLCAxOSwgMTgsIDI2LCAyNSwgMzMsIDM0LCA0MiwgNDEsIDQ5LCA1MCwgNTEsIDUyLCA1MywgNTQsIDQ2LCAzOCwgMzAsIDI5LCAyOCwgMjcsIDM1LCA0MywgNDQsIDM2LCAzNywgNDVd' // kun for testknappen
+  }
 };
 
 // Belønningen som vises når luken er løst.
-// Alle luker får «Du klarte det ♥». Legg til en luke her for å ha en ekstra tekst under.
+// Alle luker får «Du klarte det ★». Legg til en luke her for å ha en ekstra tekst under.
 const REWARDS = {
 };
 
@@ -164,7 +171,7 @@ function openGame(n) {
 
 // won = false betyr at spillet ble tapt (f.eks. Wordle uten riktig ord)
 function showReward(n, won = true) {
-  const r = won ? (REWARDS[n] || { title: 'Du klarte det \u2665\uFE0E', text: '' }) : { title: 'Det gikk ikke denne gang. Bedre lykke til i morgen \u2665\uFE0E', text: '' };
+  const r = won ? (REWARDS[n] || { title: 'Du klarte det \u2605', text: '' }) : { title: 'Det gikk ikke denne gang. Bedre lykke til i morgen \u2665\uFE0E', text: '' };
   if (!r) return;
   if ($('game-area').querySelector('.reward')) return; // allerede vist
   const card = document.createElement('div');
@@ -173,7 +180,7 @@ function showReward(n, won = true) {
     <svg class="reward-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.9L22 9.3l-5.8 4.6L18.2 21 12 17l-6.2 4 2-7.1L2 9.3l7.4-.4z"/></svg>
     <p class="reward-title"></p>
     <p class="reward-text"></p>`;
-  card.querySelector('.reward-title').textContent = r.title || 'Du klarte det \u2665\uFE0E';
+  card.querySelector('.reward-title').textContent = r.title || 'Du klarte det \u2605';
   card.querySelector('.reward-text').textContent = r.text;
   if (!r.text) card.querySelector('.reward-text').remove();
   if (!won) card.classList.add('lost');
