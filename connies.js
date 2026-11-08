@@ -1,5 +1,5 @@
 // =============================================================
-//  Connies: finn fire grupper med fire ord
+//  Connections: finn fire grupper med fire ord
 //  Gruppene lagres kodet (base64) slik at de ikke står i klartekst.
 // =============================================================
 window.Games = window.Games || {};

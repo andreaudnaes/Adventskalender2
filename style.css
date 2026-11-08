@@ -659,7 +659,7 @@ html, body {
   font-size: 15px; font-weight: 600;
 }
 
-/* ---------- Connies ---------- */
+/* ---------- Connections ---------- */
 .cn { position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .cn-help { margin: 0; font-size: 13px; color: var(--cream-soft); text-align: center; }
 
