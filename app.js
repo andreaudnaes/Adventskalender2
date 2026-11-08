@@ -51,12 +51,14 @@ const PUZZLES = {
       M: '#F08A24', // gondol oransje
       N: '#8E6CC9'  // gondol lilla
     }
-  }
+  },
+  9: { type: 'ordgjetting', answer: 'VEVERFk=' }
 };
 
 // Belønningen som vises når luken er løst.
 // Alle luker får «Du klarte det ★». Legg til en luke her for å ha en ekstra tekst under.
 const REWARDS = {
+  5: { text: 'Pariserhjulet i Liseberg' }
 };
 
 const TONES = ['#521C50', '#4B1949', '#5A2058'];
