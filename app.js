@@ -32,6 +32,25 @@ const PUZZLES = {
     size: 8,
     numbers: [[2, 1, 1], [4, 7, 2], [0, 1, 3], [1, 6, 4], [4, 1, 5], [5, 2, 6], [6, 1, 7], [5, 6, 8], [4, 3, 9], [5, 4, 10], [4, 5, 11], [5, 5, 12]],
     solution: 'WzE3LCAxNiwgMjQsIDMyLCA0MCwgNDgsIDU2LCA1NywgNTgsIDU5LCA2MCwgNjEsIDYyLCA2MywgNTUsIDQ3LCAzOSwgMzEsIDIzLCAxNSwgNywgNiwgNSwgNCwgMywgMiwgMSwgMCwgOCwgOSwgMTAsIDExLCAxMiwgMTMsIDE0LCAyMiwgMjEsIDIwLCAxOSwgMTgsIDI2LCAyNSwgMzMsIDM0LCA0MiwgNDEsIDQ5LCA1MCwgNTEsIDUyLCA1MywgNTQsIDQ2LCAzOCwgMzAsIDI5LCAyOCwgMjcsIDM1LCA0MywgNDQsIDM2LCAzNywgNDVd' // kun for testknappen
+  },
+  5: {
+    type: 'nonogram',
+    data: 'WyIuLi4uLi5BQUEuLi4uLi4iLCAiLi4uLlJSUlJSUlIuLi4uIiwgIi4uQlIuLi5TLi4uUkUuLiIsICIuQkJSUy4uUy4uU1JFRS4iLCAiLi5SLi5TLlMuUy4uUi4uIiwgIi5SLi4uLlNIUy4uLi5SLiIsICJGUlNTU1NISEhTU1NTUkQiLCAiRlIuLi4uU0hTLi4uLlJEIiwgIi5SLi4uLkxTTC4uLi5SLiIsICIuLlIuLkwuUy5MLi5SLi4iLCAiLktLUi5MLlMuTC5STU0uIiwgIi5LS1JMLi5TLi5MUk1NLiIsICIuLi5MUlJSUlJSUkwuLi4iLCAiLi5MLi4uTk5OLi4uTC4uIiwgIkdHR0dHR0dHR0dHR0dHRyJd',
+    colors: {
+      R: '#D6AE68', // felg
+      S: '#E9D6BF', // eiker
+      H: '#B8893F', // nav
+      L: '#9C7FA8', // ben
+      G: '#4E8A3E', // gress
+      A: '#D2402C', // gondol rød
+      B: '#3E7CB1', // gondol blå
+      E: '#E46A8C', // gondol rosa
+      F: '#F2C14E', // gondol gul
+      D: '#5E9E4A', // gondol grønn
+      K: '#3BA7A0', // gondol turkis
+      M: '#F08A24', // gondol oransje
+      N: '#8E6CC9'  // gondol lilla
+    }
   }
 };
 
