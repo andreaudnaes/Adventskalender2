@@ -5,9 +5,9 @@
 // Hvilket spill som ligger bak hver luke
 const GAMES = {
   1: 'Wordle', 2: 'Zip', 3: 'Connies', 4: 'Pyralinks',
-  5: 'Nonogram', 6: 'Strands', 7: 'Bikuben', 8: 'Pips',
+  5: 'Nonogram', 6: 'Strands', 7: 'Kryssord', 8: 'Pips',
   9: 'Wordle', 10: 'Zip', 11: 'Pyralinks', 12: 'Connies',
-  13: 'Stort nonogram', 14: 'Strands', 15: 'Sudoku', 16: 'Bikuben',
+  13: 'Stort nonogram', 14: 'Strands', 15: 'Sudoku', 16: 'Kryssord',
   17: 'Pyralinks', 18: 'Wordle', 19: 'Zip', 20: 'Dobbel runde: Connies',
   21: 'Nonogram', 22: 'Sudoku', 23: 'Strands', 24: 'Finalen'
 };
@@ -213,14 +213,13 @@ const HELP = {
       'Dra brikkene på plass, og trykk på en brikke for å rotere den.'
     ]
   },
-  bikuben: {
-    intro: 'Lag så mange ord du kan av de sju bokstavene.',
+  kryssord: {
+    intro: 'Løs det lille kryssordet.',
     points: [
-      'Ordene må ha minst fire bokstaver, og bokstaven i midten må alltid være med.',
-      'Bokstavene kan brukes flere ganger i samme ord.',
-      'Et ord med fire bokstaver gir ett poeng. Lengre ord gir like mange poeng som de har bokstaver.',
-      'Et pangram bruker alle sju bokstavene og gir sju ekstra poeng. Luken er løst når du finner pangrammet.',
-      'Trykk på pilene for å stokke bokstavene rundt midten.'
+      'Trykk på en rute for å velge den. Trykk på samme rute igjen for å bytte mellom vannrett og loddrett.',
+      'Hintet for ordet du står på vises øverst. Pilene ved siden av hopper til forrige eller neste hint.',
+      'Du kan også trykke på et hint i listen under tastaturet.',
+      'Når alle rutene er fylt, sjekkes kryssordet automatisk.'
     ]
   }
 };
